@@ -1,0 +1,22 @@
+# Logs
+npm-debug.log_
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Caches
+.cache
+
+# Dependency directories
+node_modules/
+
+# dotenv environment variable files
+.env
+.env.production
+
+# Wxt build / generate output
+.output/
+.wxt/
+
+# Finder (MacOS) folder config
+.DS_Store
