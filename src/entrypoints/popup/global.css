@@ -1,0 +1,113 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: 'Geist', sans-serif;
+}
+
+@custom-variant dark (&:is([data-theme="dark"] *));
+
+[data-theme='light'] {
+  color-scheme: light only;
+
+  --surface: var(--color-neutral-50);
+  --overlay: var(--color-neutral-50);
+  --elevated: var(--color-neutral-50);
+  --interactive: --alpha(var(--color-neutral-200) / 50%);
+  --muted: --alpha(var(--color-neutral-200) / 45%);
+
+  --content: var(--color-neutral-950);
+  --muted-content: var(--color-neutral-500);
+
+  --selection: var(--color-neutral-950);
+  --selection-content: var(--color-neutral-50);
+
+  --primary: var(--color-neutral-950);
+  --primary-content: var(--color-white);
+
+  --control: --alpha(var(--color-neutral-400) / 70%);
+
+  --ring: var(--color-neutral-700);
+
+  --border: var(--color-neutral-300);
+
+  --destructive: var(--color-red-500);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark only;
+
+  --surface: var(--color-neutral-950);
+  --overlay: var(--color-neutral-900);
+  --elevated: var(--color-neutral-900);
+  --interactive: --alpha(var(--color-neutral-700) / 60%);
+  --muted: --alpha(var(--color-neutral-800) / 55%);
+
+  --content: var(--color-white);
+  --muted-content: var(--color-neutral-500);
+
+  --selection: var(--color-neutral-100);
+  --selection-content: var(--color-neutral-950);
+
+  --primary: var(--color-neutral-100);
+  --primary-content: var(--color-neutral-950);
+
+  --control: var(--color-neutral-700);
+
+  --ring: var(--color-neutral-400);
+
+  --border: var(--color-neutral-800);
+
+  --destructive: var(--color-red-400);
+}
+
+@theme inline {
+  --color-surface: var(--surface);
+  --color-elevated: var(--elevated);
+  --color-overlay: var(--overlay);
+  --color-muted: var(--muted);
+  --color-interactive: var(--interactive);
+
+  --color-content: var(--content);
+  --color-muted-content: var(--muted-content);
+
+  --color-selection: var(--selection);
+  --color-selection-content: var(--selection-content);
+
+  --color-primary: var(--primary);
+  --color-primary-content: var(--primary-content);
+
+  --color-control: var(--control);
+
+  --color-ring: var(--ring);
+
+  --color-border: var(--border);
+
+  --color-destructive: var(--destructive);
+}
+
+@layer base {
+  ::selection {
+    @apply bg-selection text-selection-content;
+  }
+
+  html {
+    color-scheme: light dark;
+    scrollbar-width: thin;
+    @apply overscroll-y-none;
+  }
+
+  body {
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+    @apply bg-surface antialiased;
+  }
+}
