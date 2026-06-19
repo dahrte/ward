@@ -40,7 +40,7 @@ export default defineConfig({
     sortTailwindcss: {
       attributes: [':class', 'class', 'enter-active-class', 'leave-active-class'],
       functions: ['cn', 'tv'],
-      stylesheet: './src/entrypoints/popup/global.css',
+      stylesheet: './src/entries/popup/global.css',
     },
   },
   staged: {
