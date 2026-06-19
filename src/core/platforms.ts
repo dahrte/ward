@@ -3,12 +3,12 @@ import type { PlatformTargetSelectors } from '@/types'
 export const YouTube: PlatformTargetSelectors = {
   chapters: ['.ytp-chapter-title.ytp-button'],
   comments: ['#comments'],
-  thumbnails: ['.ytThumbnailViewModelImage'],
-  timestamps: [
-    '.ytp-time-display',
-    '.ytp-tooltip-progress-bar-pill',
-    '.ytThumbnailBottomOverlayViewModelBadgeContainer',
-    '.ytPlayerStoryboardTimestamp',
+  thumbnails: ['#thumbnail.ytd-thumbnail', '.ytThumbnailViewModelImage', '.ytp-tooltip-progress-bar-pill'],
+  timestamps: ['.ytp-time-contents', 'badge-shape.ytBadgeShapeThumbnailBadge'],
+  titles: [
+    '#video-title',
+    'h1.ytd-watch-metadata',
+    '.ytLockupMetadataViewModelTitle',
+    '.shortsLockupViewModelHostOutsideMetadataEndpoint',
   ],
-  titles: ['#title h1 yt-formatted-string'],
 }
