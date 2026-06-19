@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import Footer from '@/components/Footer.vue'
 import Header from '@/components/Header.vue'
 import Power from '@/components/settings/Power.vue'
 import { useSettings } from '@/composables/useSettings'
+
 const { loaded } = useSettings()
 </script>
 
@@ -12,5 +14,7 @@ const { loaded } = useSettings()
     <main>
       <Power />
     </main>
+
+    <Footer />
   </template>
 </template>
