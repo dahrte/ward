@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import EasterEgg from '@/components/EasterEgg.vue'
 import Footer from '@/components/Footer.vue'
 import Header from '@/components/Header.vue'
 import Power from '@/components/settings/Power.vue'
@@ -8,6 +9,8 @@ const { loaded } = useSettings()
 </script>
 
 <template>
+  <EasterEgg />
+
   <template v-if="loaded">
     <Header />
 
