@@ -21,7 +21,7 @@ const { settings } = useSettings()
       <FieldLabel v-for="target in TARGETS" :key="target.name">
         <Field orientation="horizontal">
           <FieldContent>
-            <FieldTitle class="text-xs">Obfuscate {{ target.name }}</FieldTitle>
+            <FieldTitle class="text-xs">Hide {{ target.name }}</FieldTitle>
             <FieldDescription class="text-xs">
               {{ target.description }}
             </FieldDescription>
