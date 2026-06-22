@@ -15,33 +15,6 @@
 
 @custom-variant dark (&:is([data-theme="dark"] *));
 
-[data-theme='light'] {
-  color-scheme: light only;
-
-  --surface: var(--color-neutral-50);
-  --overlay: var(--color-neutral-50);
-  --elevated: var(--color-neutral-50);
-  --interactive: --alpha(var(--color-neutral-200) / 50%);
-  --muted: --alpha(var(--color-neutral-200) / 45%);
-
-  --content: var(--color-neutral-950);
-  --muted-content: var(--color-neutral-500);
-
-  --selection: var(--color-neutral-950);
-  --selection-content: var(--color-neutral-50);
-
-  --primary: var(--color-neutral-950);
-  --primary-content: var(--color-white);
-
-  --control: --alpha(var(--color-neutral-400) / 70%);
-
-  --ring: var(--color-neutral-700);
-
-  --border: var(--color-neutral-300);
-
-  --destructive: var(--color-red-500);
-}
-
 [data-theme='dark'] {
   color-scheme: dark only;
 
@@ -57,8 +30,8 @@
   --selection: var(--color-neutral-100);
   --selection-content: var(--color-neutral-950);
 
-  --primary: var(--color-neutral-100);
-  --primary-content: var(--color-neutral-950);
+  --primary: var(--color-red-500);
+  --primary-content: var(--color-white);
 
   --control: var(--color-neutral-700);
 
