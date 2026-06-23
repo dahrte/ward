@@ -1,7 +1,7 @@
 import type { DialogContentProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'
 
-import { tv, type VariantProps } from 'tailwind-variants'
+import { tv, type VariantProps } from 'tailwind-variants/lite'
 
 export const drawerContentVariants = tv({
   base: 'fixed z-50 flex flex-col rounded-t-4xl border-border bg-surface/85 backdrop-blur-sm data-[state=closed]:duration-300 data-[state=open]:duration-500',

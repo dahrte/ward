@@ -1,6 +1,6 @@
 import type { PrimitiveProps } from 'reka-ui'
 
-import { tv, type VariantProps } from 'tailwind-variants'
+import { tv, type VariantProps } from 'tailwind-variants/lite'
 
 export const fieldVariants = tv({
   base: 'group/field flex w-full gap-x-2.5 gap-y-2',

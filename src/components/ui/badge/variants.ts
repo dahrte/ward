@@ -1,7 +1,7 @@
 import type { PrimitiveProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'
 
-import { tv, type VariantProps } from 'tailwind-variants'
+import { tv, type VariantProps } from 'tailwind-variants/lite'
 
 export const badgeVariants = tv({
   base: 'inline-flex items-center justify-center border font-medium whitespace-nowrap [&_svg]:last:-mr-0.5 [&_svg:not([class*="size-"])]:size-3.5',

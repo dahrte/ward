@@ -1,7 +1,7 @@
 import type { PrimitiveProps } from 'reka-ui'
 import type { HTMLAttributes } from 'vue'
 
-import { tv, type VariantProps } from 'tailwind-variants'
+import { tv, type VariantProps } from 'tailwind-variants/lite'
 
 export const buttonVariants = tv({
   base: [
