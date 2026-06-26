@@ -1,6 +1,6 @@
 {
   "name": "ward",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "description": "Vision denied. Spoilers concealed. Browse the web without accidentally discovering who won before you've watched the game.",
   "type": "module",
